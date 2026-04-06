@@ -4,7 +4,7 @@ import rx.interfaces.*;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class Emitter<T> implements ObservableEmitter<T>, Disposable {
+public class Emitter<T> implements ObservableEmitter<T> {
 
     private final Observer<T> observer;
     private final AtomicBoolean isTerminated = new AtomicBoolean(false);
